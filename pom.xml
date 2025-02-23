@@ -14,6 +14,27 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <dependencies>
+        <!--防报错-->
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-core</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>1.1.1</version>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -62,7 +83,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
-            <version>2.6.0</version>
         </dependency>
 
         <!--        &lt;!&ndash;Token生成与解析&ndash;&gt;-->
@@ -214,6 +234,12 @@
         <!--            <artifactId>simple-xml-safe</artifactId>-->
         <!--            <version>2.7.1</version>-->
         <!--        </dependency>-->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-spring-boot-starter</artifactId>
+            <version>2.0.6</version>
+        </dependency>
+
     </dependencies>
 
     <build>

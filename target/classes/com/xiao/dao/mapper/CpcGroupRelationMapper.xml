@@ -116,16 +116,4 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.xiao.dao.dto.CpcGroupRelation">
-    <!--@mbg.generated-->
-    update cpc_group_relation
-    set group_id = #{groupId,jdbcType=BIGINT},
-      member_id = #{memberId,jdbcType=BIGINT},
-      nickname = #{nickname,jdbcType=VARCHAR},
-      `role` = #{role,jdbcType=OTHER},
-      username = #{username,jdbcType=VARCHAR},
-      user_no = #{userNo,jdbcType=VARCHAR},
-      unit_name = #{unitName,jdbcType=VARCHAR}
-    where id = #{id,jdbcType=BIGINT}
-  </update>
 </mapper>

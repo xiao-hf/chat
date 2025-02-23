@@ -35,9 +35,82 @@
             <entry key="chat:cpc_alarm_info">
               <value>
                 <TableGenerateConfig>
+                  <option name="columnOverrideList">
+                    <list>
+                      <MyColumnOverride>
+                        <option name="columnName" value="id" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="alarm_id" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="person_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="person_id_code" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="person_name" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="similarity_degree" />
+                        <option name="javaType" value="java.lang.Double" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="shot_time" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="alarm_community_id" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="alarm_community_dmdm" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="device_code" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="device_name" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="device_id" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="latitude" />
+                        <option name="javaType" value="java.lang.Double" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="longitude" />
+                        <option name="javaType" value="java.lang.Double" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="big_url" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="small_url" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_date" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                    </list>
+                  </option>
                   <option name="javaModelName" value="CpcAlarmInfo" />
                   <option name="moduleName" value="chat" />
                   <option name="mybatisplusIdType" value="INPUT" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
               </value>
@@ -45,10 +118,51 @@
             <entry key="chat:cpc_associated_suspect">
               <value>
                 <TableGenerateConfig>
+                  <option name="columnOverrideList">
+                    <list>
+                      <MyColumnOverride>
+                        <option name="columnName" value="id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="associated_group_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="name" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="suspect_id_number" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="entity_picture" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_time" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="update_time" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_user_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="update_user_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                    </list>
+                  </option>
                   <option name="generatedKey" value="id" />
                   <option name="javaModelName" value="CpcAssociatedSuspect" />
                   <option name="moduleName" value="chat" />
                   <option name="mybatisplusIdType" value="INPUT" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
               </value>
@@ -56,10 +170,51 @@
             <entry key="chat:cpc_associated_vehicle">
               <value>
                 <TableGenerateConfig>
+                  <option name="columnOverrideList">
+                    <list>
+                      <MyColumnOverride>
+                        <option name="columnName" value="id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="associated_group_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="name" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="vehicle_color" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="entity_picture" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_time" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="update_time" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_user_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="update_user_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                    </list>
+                  </option>
                   <option name="generatedKey" value="id" />
                   <option name="javaModelName" value="CpcAssociatedVehicle" />
                   <option name="moduleName" value="chat" />
                   <option name="mybatisplusIdType" value="INPUT" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
               </value>
@@ -67,10 +222,55 @@
             <entry key="chat:cpc_group_chat_message">
               <value>
                 <TableGenerateConfig>
+                  <option name="columnOverrideList">
+                    <list>
+                      <MyColumnOverride>
+                        <option name="columnName" value="id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="group_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="content" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="content_type" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="is_deleted" />
+                        <option name="javaType" value="java.lang.Boolean" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="is_key_message" />
+                        <option name="javaType" value="java.lang.Boolean" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="is_pinned" />
+                        <option name="javaType" value="java.lang.Boolean" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="pinned_time" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_time" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="update_user_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                    </list>
+                  </option>
                   <option name="generatedKey" value="id" />
                   <option name="javaModelName" value="CpcGroupChatMessage" />
                   <option name="moduleName" value="chat" />
                   <option name="mybatisplusIdType" value="INPUT" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
               </value>
@@ -78,10 +278,31 @@
             <entry key="chat:cpc_group_chat_message_like">
               <value>
                 <TableGenerateConfig>
+                  <option name="columnOverrideList">
+                    <list>
+                      <MyColumnOverride>
+                        <option name="columnName" value="id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="message_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="liker_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="like_time" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                    </list>
+                  </option>
                   <option name="generatedKey" value="id" />
                   <option name="javaModelName" value="CpcGroupChatMessageLike" />
                   <option name="moduleName" value="chat" />
                   <option name="mybatisplusIdType" value="INPUT" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
               </value>
@@ -89,10 +310,47 @@
             <entry key="chat:cpc_group_relation">
               <value>
                 <TableGenerateConfig>
+                  <option name="columnOverrideList">
+                    <list>
+                      <MyColumnOverride>
+                        <option name="columnName" value="id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="group_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="member_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="nickname" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="role" />
+                        <option name="javaType" value="java.lang.Object" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="username" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="user_no" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="unit_name" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                    </list>
+                  </option>
                   <option name="generatedKey" value="id" />
                   <option name="javaModelName" value="CpcGroupRelation" />
                   <option name="moduleName" value="chat" />
                   <option name="mybatisplusIdType" value="INPUT" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
               </value>
@@ -100,10 +358,63 @@
             <entry key="chat:cpc_group_table">
               <value>
                 <TableGenerateConfig>
+                  <option name="columnOverrideList">
+                    <list>
+                      <MyColumnOverride>
+                        <option name="columnName" value="id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="group_name" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="case_name" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="case_brief" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="is_pinned" />
+                        <option name="javaType" value="java.lang.Boolean" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="is_deleted" />
+                        <option name="javaType" value="java.lang.Boolean" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="group_status" />
+                        <option name="javaType" value="java.lang.Object" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="parent_group_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_time" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="update_time" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_user_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="update_user_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                    </list>
+                  </option>
                   <option name="generatedKey" value="id" />
                   <option name="javaModelName" value="CpcGroupTable" />
                   <option name="moduleName" value="chat" />
                   <option name="mybatisplusIdType" value="INPUT" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
               </value>
@@ -111,9 +422,70 @@
             <entry key="chat:cpc_job">
               <value>
                 <TableGenerateConfig>
+                  <option name="columnOverrideList">
+                    <list>
+                      <MyColumnOverride>
+                        <option name="columnName" value="job_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="job_name" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="job_code" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="job_group" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="invoke_target" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="cron_expression" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="misfire_policy" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="concurrent" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="status" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="remark" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_date" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="update_date" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_user_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="update_user_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                    </list>
+                  </option>
                   <option name="javaModelName" value="CpcJob" />
                   <option name="moduleName" value="chat" />
                   <option name="mybatisplusIdType" value="INPUT" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
               </value>
@@ -121,10 +493,59 @@
             <entry key="chat:cpc_message">
               <value>
                 <TableGenerateConfig>
+                  <option name="columnOverrideList">
+                    <list>
+                      <MyColumnOverride>
+                        <option name="columnName" value="id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="type" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="mobiles" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="mobiles_num" />
+                        <option name="javaType" value="java.lang.Integer" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="time" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="send_user" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="content" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_date" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="update_date" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_user_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="update_user_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                    </list>
+                  </option>
                   <option name="generatedKey" value="id" />
                   <option name="javaModelName" value="CpcMessage" />
                   <option name="moduleName" value="chat" />
                   <option name="mybatisplusIdType" value="INPUT" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
               </value>
@@ -132,10 +553,51 @@
             <entry key="chat:cpc_permission">
               <value>
                 <TableGenerateConfig>
+                  <option name="columnOverrideList">
+                    <list>
+                      <MyColumnOverride>
+                        <option name="columnName" value="id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="permission_name" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="content" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="type" />
+                        <option name="javaType" value="java.lang.Integer" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="remark" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_date" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="update_date" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_user_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="update_user_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                    </list>
+                  </option>
                   <option name="generatedKey" value="id" />
                   <option name="javaModelName" value="CpcPermission" />
                   <option name="moduleName" value="chat" />
                   <option name="mybatisplusIdType" value="INPUT" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
               </value>
@@ -143,9 +605,50 @@
             <entry key="chat:cpc_role">
               <value>
                 <TableGenerateConfig>
+                  <option name="columnOverrideList">
+                    <list>
+                      <MyColumnOverride>
+                        <option name="columnName" value="id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="role_name" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="role_code" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="role_enable" />
+                        <option name="javaType" value="java.lang.Object" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="remark" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_date" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="update_date" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_user_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="update_user_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                    </list>
+                  </option>
                   <option name="javaModelName" value="CpcRole" />
                   <option name="moduleName" value="chat" />
                   <option name="mybatisplusIdType" value="INPUT" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
               </value>
@@ -153,9 +656,38 @@
             <entry key="chat:cpc_role_permission">
               <value>
                 <TableGenerateConfig>
+                  <option name="columnOverrideList">
+                    <list>
+                      <MyColumnOverride>
+                        <option name="columnName" value="rid" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="pid" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_date" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="update_date" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_user_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="update_user_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                    </list>
+                  </option>
                   <option name="javaModelName" value="CpcRolePermission" />
                   <option name="moduleName" value="chat" />
                   <option name="mybatisplusIdType" value="INPUT" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
               </value>
@@ -163,9 +695,50 @@
             <entry key="chat:cpc_sys_login_log">
               <value>
                 <TableGenerateConfig>
+                  <option name="columnOverrideList">
+                    <list>
+                      <MyColumnOverride>
+                        <option name="columnName" value="id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="user_id" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="user_name" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="unit_no" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="unit_name" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="login_ip" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="status" />
+                        <option name="javaType" value="java.lang.Integer" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="remark" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="login_time" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                    </list>
+                  </option>
                   <option name="javaModelName" value="CpcSysLoginLog" />
                   <option name="moduleName" value="chat" />
                   <option name="mybatisplusIdType" value="INPUT" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
               </value>
@@ -173,9 +746,66 @@
             <entry key="chat:cpc_sys_operation_log">
               <value>
                 <TableGenerateConfig>
+                  <option name="columnOverrideList">
+                    <list>
+                      <MyColumnOverride>
+                        <option name="columnName" value="id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="user_id" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="user_name" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="unit_no" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="unit_name" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="operation_title" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="operation_ip" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="operation_name" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="operation_url" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="operation_time" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="operation_status" />
+                        <option name="javaType" value="java.lang.Integer" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="operation_param" />
+                        <option name="javaType" value="java.lang.Object" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="remark" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                    </list>
+                  </option>
                   <option name="javaModelName" value="CpcSysOperationLog" />
                   <option name="moduleName" value="chat" />
                   <option name="mybatisplusIdType" value="INPUT" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
               </value>
@@ -183,10 +813,59 @@
             <entry key="chat:cpc_unit">
               <value>
                 <TableGenerateConfig>
+                  <option name="columnOverrideList">
+                    <list>
+                      <MyColumnOverride>
+                        <option name="columnName" value="id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="unit_name" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="unit_no" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="unit_adress" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="unit_num" />
+                        <option name="javaType" value="java.lang.Integer" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="unit_parent_unit_no" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="type" />
+                        <option name="javaType" value="java.lang.Integer" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_date" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="update_date" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_user" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="update_user" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                    </list>
+                  </option>
                   <option name="generatedKey" value="id" />
                   <option name="javaModelName" value="CpcUnit" />
                   <option name="moduleName" value="chat" />
                   <option name="mybatisplusIdType" value="INPUT" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
               </value>
@@ -194,9 +873,66 @@
             <entry key="chat:cpc_user">
               <value>
                 <TableGenerateConfig>
+                  <option name="columnOverrideList">
+                    <list>
+                      <MyColumnOverride>
+                        <option name="columnName" value="id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="token" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="user_no" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="user_name" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="user_phone" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="user_unit_no" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="user_enable" />
+                        <option name="javaType" value="java.lang.Object" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_date" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="update_date" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_user_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="update_user_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="login_time" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="password" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                    </list>
+                  </option>
                   <option name="javaModelName" value="CpcUser" />
                   <option name="moduleName" value="chat" />
                   <option name="mybatisplusIdType" value="INPUT" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
               </value>
@@ -204,15 +940,45 @@
             <entry key="chat:cpc_user_role">
               <value>
                 <TableGenerateConfig>
+                  <option name="columnOverrideList">
+                    <list>
+                      <MyColumnOverride>
+                        <option name="columnName" value="user_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="role_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_date" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="update_date" />
+                        <option name="javaType" value="java.util.Date" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_user_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                      <MyColumnOverride>
+                        <option name="columnName" value="update_user_id" />
+                        <option name="javaType" value="java.lang.Long" />
+                      </MyColumnOverride>
+                    </list>
+                  </option>
                   <option name="javaModelName" value="CpcUserRole" />
                   <option name="moduleName" value="chat" />
                   <option name="mybatisplusIdType" value="INPUT" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
               </value>
             </entry>
           </map>
         </option>
+        <option name="updateByPrimaykeyEnabled" value="false" />
         <option name="useSwagger" value="true" />
         <option name="xmlMapperPackage" value="com.xiao.dao.mapper" />
         <option name="xmlMapperPath" value="$PROJECT_DIR$/src/main/java" />

@@ -39,13 +39,13 @@ public class CpcGroupTable {
      * 是否置顶 默认否
      */
     @ApiModelProperty(value = "是否置顶 默认否")
-    private Byte isPinned;
+    private Boolean isPinned;
 
     /**
      * 是否已删除 默认否
      */
     @ApiModelProperty(value = "是否已删除 默认否")
-    private Byte isDeleted;
+    private Boolean isDeleted;
 
     /**
      * 是否进行中 ('进行中'/'已结案')

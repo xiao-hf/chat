@@ -134,17 +134,4 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.xiao.dao.dto.CpcSysLoginLog">
-    <!--@mbg.generated-->
-    update cpc_sys_login_log
-    set user_id = #{userId,jdbcType=VARCHAR},
-      user_name = #{userName,jdbcType=VARCHAR},
-      unit_no = #{unitNo,jdbcType=VARCHAR},
-      unit_name = #{unitName,jdbcType=VARCHAR},
-      login_ip = #{loginIp,jdbcType=VARCHAR},
-      `status` = #{status,jdbcType=INTEGER},
-      remark = #{remark,jdbcType=VARCHAR},
-      login_time = #{loginTime,jdbcType=TIMESTAMP}
-    where id = #{id,jdbcType=BIGINT}
-  </update>
 </mapper>

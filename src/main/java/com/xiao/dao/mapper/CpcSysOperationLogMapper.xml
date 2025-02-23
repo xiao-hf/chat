@@ -85,7 +85,7 @@
       <if test="operationStatus != null">
         operation_status,
       </if>
-      <if test="operationParam != null and operationParam != ''">
+      <if test="operationParam != null">
         operation_param,
       </if>
       <if test="remark != null and remark != ''">
@@ -126,7 +126,7 @@
       <if test="operationStatus != null">
         #{operationStatus,jdbcType=INTEGER},
       </if>
-      <if test="operationParam != null and operationParam != ''">
+      <if test="operationParam != null">
         #{operationParam,jdbcType=VARCHAR},
       </if>
       <if test="remark != null and remark != ''">
@@ -168,30 +168,13 @@
       <if test="operationStatus != null">
         operation_status = #{operationStatus,jdbcType=INTEGER},
       </if>
-      <if test="operationParam != null and operationParam != ''">
+      <if test="operationParam != null">
         operation_param = #{operationParam,jdbcType=VARCHAR},
       </if>
       <if test="remark != null and remark != ''">
         remark = #{remark,jdbcType=VARCHAR},
       </if>
     </set>
-    where id = #{id,jdbcType=BIGINT}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.xiao.dao.dto.CpcSysOperationLog">
-    <!--@mbg.generated-->
-    update cpc_sys_operation_log
-    set user_id = #{userId,jdbcType=VARCHAR},
-      user_name = #{userName,jdbcType=VARCHAR},
-      unit_no = #{unitNo,jdbcType=VARCHAR},
-      unit_name = #{unitName,jdbcType=VARCHAR},
-      operation_title = #{operationTitle,jdbcType=VARCHAR},
-      operation_ip = #{operationIp,jdbcType=VARCHAR},
-      operation_name = #{operationName,jdbcType=VARCHAR},
-      operation_url = #{operationUrl,jdbcType=VARCHAR},
-      operation_time = #{operationTime,jdbcType=TIMESTAMP},
-      operation_status = #{operationStatus,jdbcType=INTEGER},
-      operation_param = #{operationParam,jdbcType=VARCHAR},
-      remark = #{remark,jdbcType=VARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
 </mapper>

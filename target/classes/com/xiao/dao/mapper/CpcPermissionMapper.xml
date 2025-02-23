@@ -127,17 +127,4 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.xiao.dao.dto.CpcPermission">
-    <!--@mbg.generated-->
-    update cpc_permission
-    set permission_name = #{permissionName,jdbcType=VARCHAR},
-      content = #{content,jdbcType=VARCHAR},
-      `type` = #{type,jdbcType=INTEGER},
-      remark = #{remark,jdbcType=VARCHAR},
-      create_date = #{createDate,jdbcType=TIMESTAMP},
-      update_date = #{updateDate,jdbcType=TIMESTAMP},
-      create_user_id = #{createUserId,jdbcType=BIGINT},
-      update_user_id = #{updateUserId,jdbcType=BIGINT}
-    where id = #{id,jdbcType=BIGINT}
-  </update>
 </mapper>

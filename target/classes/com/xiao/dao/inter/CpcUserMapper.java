@@ -17,7 +17,5 @@ public interface CpcUserMapper {
 
     int updateByPrimaryKeySelective(CpcUser record);
 
-    int updateByPrimaryKey(CpcUser record);
-
     List<CpcUser> selectByAll(CpcUser cpcUser);
 }

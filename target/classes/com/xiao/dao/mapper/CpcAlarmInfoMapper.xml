@@ -220,25 +220,4 @@
     </set>
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.xiao.dao.dto.CpcAlarmInfo">
-    <!--@mbg.generated-->
-    update cpc_alarm_info
-    set alarm_id = #{alarmId,jdbcType=VARCHAR},
-      person_id = #{personId,jdbcType=BIGINT},
-      person_id_code = #{personIdCode,jdbcType=VARCHAR},
-      person_name = #{personName,jdbcType=VARCHAR},
-      similarity_degree = #{similarityDegree,jdbcType=DOUBLE},
-      shot_time = #{shotTime,jdbcType=TIMESTAMP},
-      alarm_community_id = #{alarmCommunityId,jdbcType=VARCHAR},
-      alarm_community_dmdm = #{alarmCommunityDmdm,jdbcType=VARCHAR},
-      device_code = #{deviceCode,jdbcType=VARCHAR},
-      device_name = #{deviceName,jdbcType=VARCHAR},
-      device_id = #{deviceId,jdbcType=VARCHAR},
-      latitude = #{latitude,jdbcType=DOUBLE},
-      longitude = #{longitude,jdbcType=DOUBLE},
-      big_url = #{bigUrl,jdbcType=VARCHAR},
-      small_url = #{smallUrl,jdbcType=VARCHAR},
-      create_date = #{createDate,jdbcType=TIMESTAMP}
-    where id = #{id,jdbcType=VARCHAR}
-  </update>
 </mapper>

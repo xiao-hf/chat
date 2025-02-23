@@ -8,205 +8,81 @@
     <option name="showLibraryBeans" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07d15414-d978-44b4-9f06-193d7d626674" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f4b2e478-ff79-45c0-a0b3-8f48a05af164.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f4b2e478-ff79-45c0-a0b3-8f48a05af164/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f4b2e478-ff79-45c0-a0b3-8f48a05af164/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f4b2e478-ff79-45c0-a0b3-8f48a05af164/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f4b2e478-ff79-45c0-a0b3-8f48a05af164/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chat.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/ChatApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/common/R.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/config/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/config/JwtInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/config/ThreadLocalUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/constants/MyConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/controller/ChatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcAlarmInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcAssociatedSuspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcAssociatedVehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcGroupChatMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcGroupChatMessageLike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcGroupRelation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcGroupTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcPermission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcRolePermission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcSysLoginLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcSysOperationLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcUnit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcUserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/inter/CpcAlarmInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/inter/CpcAssociatedSuspectMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/inter/CpcAssociatedVehicleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/inter/CpcGroupChatMessageLikeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/inter/CpcGroupChatMessageMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/inter/CpcGroupRelationMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/inter/CpcGroupTableMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/inter/CpcJobMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/inter/CpcMessageMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/inter/CpcPermissionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/inter/CpcRoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/inter/CpcRolePermissionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/inter/CpcSysLoginLogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/inter/CpcSysOperationLogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/inter/CpcUnitMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/inter/CpcUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/inter/CpcUserRoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcAlarmInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcAssociatedSuspectMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcAssociatedVehicleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcGroupChatMessageLikeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcGroupChatMessageMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcGroupRelationMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcGroupTableMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcJobMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcMessageMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcPermissionMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcRoleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcRolePermissionMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcSysLoginLogMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcSysOperationLogMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcUnitMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcUserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcUserRoleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/exception/LoginException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/req/ReqQueryMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/socket/ClientCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/socket/EventListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/socket/ExceptionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/socket/SocketIoConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/socket/claude/ChatMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/socket/claude/ChatServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/utils/ExcelUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/utils/JjwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiao/utils/RedisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/CpcUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/impl/CpcUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/xiao/ChatApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/ChatApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/ChatApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/common/R.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/common/R.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/controller/ChatController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/controller/ChatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcAlarmInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcAlarmInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcAssociatedSuspect.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcAssociatedSuspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcAssociatedVehicle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcAssociatedVehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcGroupChatMessage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcGroupChatMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcGroupChatMessageLike.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcGroupChatMessageLike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcGroupRelation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcGroupRelation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcGroupTable.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcGroupTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcJob.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcMessage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcPermission.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcPermission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcRole.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcRolePermission.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcRolePermission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcSysLoginLog.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcSysLoginLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcSysOperationLog.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcSysOperationLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcUnit.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcUnit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcUser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcUserRole.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcUserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcAlarmInfoMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcAlarmInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcAssociatedSuspectMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcAssociatedSuspectMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcAssociatedVehicleMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcAssociatedVehicleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcGroupChatMessageLikeMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcGroupChatMessageLikeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcGroupChatMessageMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcGroupChatMessageMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcGroupRelationMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcGroupRelationMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcGroupTableMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcGroupTableMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcJobMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcJobMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcMessageMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcMessageMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcPermissionMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcPermissionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcRoleMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcRoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcRolePermissionMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcRolePermissionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcSysLoginLogMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcSysLoginLogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcSysOperationLogMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcSysOperationLogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcUnitMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcUnitMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcUserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcUserRoleMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcUserRoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcAlarmInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcAssociatedSuspectMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcAssociatedVehicleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcGroupChatMessageLikeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcGroupChatMessageMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcGroupRelationMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcGroupTableMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcJobMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcMessageMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcPermissionMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcRoleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcRolePermissionMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcSysLoginLogMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcSysOperationLogMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcUnitMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcUserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcUserRoleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/req/ReqQueryMessage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/req/ReqQueryMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/socket/ClientCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/socket/EventListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/socket/ExceptionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/socket/SocketIoConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/utils/ExcelUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/utils/ExcelUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/utils/RedisUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/xiao/utils/RedisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/xiao/ChatApplicationTests.class" afterDir="false" />
+    <list default="true" id="07d15414-d978-44b4-9f06-193d7d626674" name="Changes" comment="pre1">
+      <change beforePath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f4b2e478-ff79-45c0-a0b3-8f48a05af164.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f4b2e478-ff79-45c0-a0b3-8f48a05af164.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcGroupChatMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcGroupChatMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcGroupTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcGroupTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcSysOperationLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcSysOperationLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/dto/CpcUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/dao/inter/CpcGroupChatMessageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/inter/CpcGroupChatMessageMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/dao/inter/CpcUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/inter/CpcUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcAlarmInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcAlarmInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcAssociatedSuspectMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcAssociatedSuspectMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcAssociatedVehicleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcAssociatedVehicleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcGroupChatMessageLikeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcGroupChatMessageLikeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcGroupChatMessageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcGroupChatMessageMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcGroupRelationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcGroupRelationMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcGroupTableMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcGroupTableMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcJobMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcJobMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcMessageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcMessageMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcPermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcPermissionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcSysLoginLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcSysLoginLogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcSysOperationLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcSysOperationLogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcUnitMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcUnitMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/dao/mapper/CpcUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/socket/ClientCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/socket/ClientCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/socket/EventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/socket/EventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/socket/ExceptionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/socket/ExceptionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/socket/SocketIoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/socket/SocketIoConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/socket/claude/ChatMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/socket/claude/ChatServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiao/utils/JjwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/utils/JjwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/CpcUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/service/CpcUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/CpcUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiao/service/impl/CpcUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcGroupChatMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcGroupChatMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcGroupChatMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcGroupChatMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcGroupTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcGroupTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcGroupTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcGroupTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcSysOperationLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcSysOperationLog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcSysOperationLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcSysOperationLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/dto/CpcUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcGroupChatMessageMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcGroupChatMessageMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcGroupChatMessageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcGroupChatMessageMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcUserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcUserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/inter/CpcUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcAlarmInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcAlarmInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcAssociatedSuspectMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcAssociatedSuspectMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcAssociatedVehicleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcAssociatedVehicleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcGroupChatMessageLikeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcGroupChatMessageLikeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcGroupChatMessageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcGroupChatMessageMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcGroupRelationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcGroupRelationMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcGroupTableMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcGroupTableMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcJobMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcJobMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcMessageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcMessageMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcPermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcPermissionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcSysLoginLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcSysLoginLogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcSysOperationLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcSysOperationLogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcUnitMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcUnitMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/dao/mapper/CpcUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/socket/ClientCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/socket/ClientCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/socket/EventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/socket/EventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/socket/ExceptionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/socket/ExceptionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiao/socket/SocketIoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiao/socket/SocketIoConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +136,7 @@
     "ToolWindowRun.ShowToolbar": "false",
     "ToolWindowStructure.ShowToolbar": "false",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/study/chat/src/main/java/com/xiao",
+    "last_opened_file_path": "C:/Users/Administrator/Desktop/聊天室demo/netty-cookie-push-message",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -268,7 +144,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MyBatisCodeHelper",
+    "settings.editor.selected.configurable": "com.ccnode.codegenerator.q.b",
     "spring.configuration.checksum": "aa8af3ebe14831a7cd1b6d1383a03755",
     "vue.rearranger.settings.migration": "true"
   },
@@ -278,13 +154,16 @@
     ]
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\study\chat\src\main\java\com\xiao\socket" />
       <recent name="D:\study\chat\src\main\java\com\xiao" />
       <recent name="D:\study\chat\src\main\java\com\xiao\dao" />
       <recent name="D:\study\chat\src\main\resources\com\xiao\dao\inter" />
       <recent name="D:\study\chat\src\main\resources" />
-      <recent name="D:\study\chat\src\main\java\com\xiao\socket" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\study\chat\src\main\resources\com\xiao\dao\inter" />
@@ -297,7 +176,7 @@
       <recent name="com.xiao.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ChatApplicationTests.contextLoads">
+  <component name="RunManager" selected="Spring Boot.ChatApplication">
     <configuration name="ChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xiao.socket.claude.ChatServer" />
       <module name="chat" />
@@ -342,9 +221,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ChatApplication" />
         <item itemvalue="JUnit.ChatApplicationTests.contextLoads" />
         <item itemvalue="Application.ChatServer" />
-        <item itemvalue="Spring Boot.ChatApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -357,8 +236,19 @@
       <option name="presentableId" value="Default" />
       <updated>1740231810157</updated>
       <workItem from="1740231811311" duration="2340000" />
-      <workItem from="1740234473344" duration="14331000" />
+      <workItem from="1740234473344" duration="19482000" />
+      <workItem from="1740293686395" duration="1280000" />
+      <workItem from="1740294991709" duration="2737000" />
+      <workItem from="1740297772742" duration="8967000" />
     </task>
+    <task id="LOCAL-00001" summary="pre1">
+      <created>1740278688378</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740278688378</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,5 +267,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pre1" />
+    <option name="LAST_COMMIT_MESSAGE" value="pre1" />
   </component>
 </project>

@@ -159,20 +159,4 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.xiao.dao.dto.CpcGroupTable">
-    <!--@mbg.generated-->
-    update cpc_group_table
-    set group_name = #{groupName,jdbcType=VARCHAR},
-      case_name = #{caseName,jdbcType=VARCHAR},
-      case_brief = #{caseBrief,jdbcType=LONGVARCHAR},
-      is_pinned = #{isPinned,jdbcType=TINYINT},
-      is_deleted = #{isDeleted,jdbcType=TINYINT},
-      group_status = #{groupStatus,jdbcType=OTHER},
-      parent_group_id = #{parentGroupId,jdbcType=BIGINT},
-      create_time = #{createTime,jdbcType=TIMESTAMP},
-      update_time = #{updateTime,jdbcType=TIMESTAMP},
-      create_user_id = #{createUserId,jdbcType=BIGINT},
-      update_user_id = #{updateUserId,jdbcType=BIGINT}
-    where id = #{id,jdbcType=BIGINT}
-  </update>
 </mapper>

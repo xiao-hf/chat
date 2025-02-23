@@ -127,17 +127,4 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.xiao.dao.dto.CpcAssociatedVehicle">
-    <!--@mbg.generated-->
-    update cpc_associated_vehicle
-    set associated_group_id = #{associatedGroupId,jdbcType=BIGINT},
-      `name` = #{name,jdbcType=VARCHAR},
-      vehicle_color = #{vehicleColor,jdbcType=VARCHAR},
-      entity_picture = #{entityPicture,jdbcType=VARCHAR},
-      create_time = #{createTime,jdbcType=TIMESTAMP},
-      update_time = #{updateTime,jdbcType=TIMESTAMP},
-      create_user_id = #{createUserId,jdbcType=BIGINT},
-      update_user_id = #{updateUserId,jdbcType=BIGINT}
-    where id = #{id,jdbcType=BIGINT}
-  </update>
 </mapper>

@@ -27,7 +27,7 @@ public class CpcRole {
      * 是否启用
      */
     @ApiModelProperty(value = "是否启用")
-    private Boolean roleEnable;
+    private Object roleEnable;
 
     /**
      * 备注

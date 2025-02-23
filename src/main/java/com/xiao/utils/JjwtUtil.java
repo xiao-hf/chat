@@ -72,7 +72,7 @@ public class JjwtUtil {
     }
 
     // 解密jwt
-    public static Claims parseJWT(String jwt) throws Exception {
+    public static Claims parseJWT(String jwt) {
         SecretKey key = generalKey(); // 签名秘钥，和生成的签名的秘钥一模一样
         return Jwts.parser() // 得到DefaultJwtParser
                 .setSigningKey(key) // 设置签名的秘钥

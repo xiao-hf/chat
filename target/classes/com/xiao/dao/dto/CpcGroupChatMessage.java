@@ -33,25 +33,25 @@ public class CpcGroupChatMessage {
      * 消息的类型 ('文本'/'图片'/'视频'/'文件')
      */
     @ApiModelProperty(value = "消息的类型 ('文本'/'图片'/'视频'/'文件')")
-    private Object contentType;
+    private String contentType;
 
     /**
      * 消息是否被删除
      */
     @ApiModelProperty(value = "消息是否被删除")
-    private Byte isDeleted;
+    private Boolean isDeleted;
 
     /**
      * 是否标记为关键信息
      */
     @ApiModelProperty(value = "是否标记为关键信息")
-    private Byte isKeyMessage;
+    private Boolean isKeyMessage;
 
     /**
      * 是否被置顶
      */
     @ApiModelProperty(value = "是否被置顶")
-    private Byte isPinned;
+    private Boolean isPinned;
 
     /**
      * 消息被置顶的时间

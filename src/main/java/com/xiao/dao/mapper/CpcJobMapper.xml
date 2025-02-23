@@ -187,22 +187,4 @@
     </set>
     where job_id = #{jobId,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.xiao.dao.dto.CpcJob">
-    <!--@mbg.generated-->
-    update cpc_job
-    set job_name = #{jobName,jdbcType=VARCHAR},
-      job_code = #{jobCode,jdbcType=VARCHAR},
-      job_group = #{jobGroup,jdbcType=VARCHAR},
-      invoke_target = #{invokeTarget,jdbcType=VARCHAR},
-      cron_expression = #{cronExpression,jdbcType=VARCHAR},
-      misfire_policy = #{misfirePolicy,jdbcType=VARCHAR},
-      concurrent = #{concurrent,jdbcType=VARCHAR},
-      `status` = #{status,jdbcType=VARCHAR},
-      remark = #{remark,jdbcType=VARCHAR},
-      create_date = #{createDate,jdbcType=TIMESTAMP},
-      update_date = #{updateDate,jdbcType=TIMESTAMP},
-      create_user_id = #{createUserId,jdbcType=BIGINT},
-      update_user_id = #{updateUserId,jdbcType=BIGINT}
-    where job_id = #{jobId,jdbcType=BIGINT}
-  </update>
 </mapper>

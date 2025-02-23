@@ -48,7 +48,7 @@ public class CpcUser {
      * 是否启用
      */
     @ApiModelProperty(value = "是否启用")
-    private Boolean userEnable;
+    private Object userEnable;
 
     /**
      * 插入时间

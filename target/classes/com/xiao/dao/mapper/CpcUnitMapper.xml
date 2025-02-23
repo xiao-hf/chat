@@ -149,19 +149,4 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.xiao.dao.dto.CpcUnit">
-    <!--@mbg.generated-->
-    update cpc_unit
-    set unit_name = #{unitName,jdbcType=VARCHAR},
-      unit_no = #{unitNo,jdbcType=VARCHAR},
-      unit_adress = #{unitAdress,jdbcType=VARCHAR},
-      unit_num = #{unitNum,jdbcType=INTEGER},
-      unit_parent_unit_no = #{unitParentUnitNo,jdbcType=VARCHAR},
-      `type` = #{type,jdbcType=INTEGER},
-      create_date = #{createDate,jdbcType=TIMESTAMP},
-      update_date = #{updateDate,jdbcType=TIMESTAMP},
-      create_user = #{createUser,jdbcType=VARCHAR},
-      update_user = #{updateUser,jdbcType=VARCHAR}
-    where id = #{id,jdbcType=BIGINT}
-  </update>
 </mapper>

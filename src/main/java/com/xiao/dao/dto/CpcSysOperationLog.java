@@ -78,7 +78,7 @@ public class CpcSysOperationLog {
      * 请求参数
      */
     @ApiModelProperty(value = "请求参数")
-    private String operationParam;
+    private Object operationParam;
 
     /**
      * 备注
