@@ -59,9 +59,11 @@ public class EventListener {
         Long groupId = Long.valueOf(map.get("groupId").toString());
         Claims claims = JjwtUtil.parseJWT(token);
         String username = (String) claims.get("username");
+        log.info("用户{}已发送消息", username);
         Long userId = Long.valueOf(claims.get("id").toString());
         String key = MyConstants.LOGIN_PREFIX + username;
         if (!redisUtil.contains(key)) {
+            log.info("用户已过期!");
             return R.fail("用户已过期!");
         } else {
             redisUtil.expire(key, 30, TimeUnit.MINUTES);
