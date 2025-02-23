@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiao.dao.inter.CpcAlarmInfoMapper">
+  <resultMap id="BaseResultMap" type="com.xiao.dao.dto.CpcAlarmInfo">
+    <!--@mbg.generated-->
+    <!--@Table cpc_alarm_info-->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="alarm_id" jdbcType="VARCHAR" property="alarmId" />
+    <result column="person_id" jdbcType="BIGINT" property="personId" />
+    <result column="person_id_code" jdbcType="VARCHAR" property="personIdCode" />
+    <result column="person_name" jdbcType="VARCHAR" property="personName" />
+    <result column="similarity_degree" jdbcType="DOUBLE" property="similarityDegree" />
+    <result column="shot_time" jdbcType="TIMESTAMP" property="shotTime" />
+    <result column="alarm_community_id" jdbcType="VARCHAR" property="alarmCommunityId" />
+    <result column="alarm_community_dmdm" jdbcType="VARCHAR" property="alarmCommunityDmdm" />
+    <result column="device_code" jdbcType="VARCHAR" property="deviceCode" />
+    <result column="device_name" jdbcType="VARCHAR" property="deviceName" />
+    <result column="device_id" jdbcType="VARCHAR" property="deviceId" />
+    <result column="latitude" jdbcType="DOUBLE" property="latitude" />
+    <result column="longitude" jdbcType="DOUBLE" property="longitude" />
+    <result column="big_url" jdbcType="VARCHAR" property="bigUrl" />
+    <result column="small_url" jdbcType="VARCHAR" property="smallUrl" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, alarm_id, person_id, person_id_code, person_name, similarity_degree, shot_time, 
+    alarm_community_id, alarm_community_dmdm, device_code, device_name, device_id, latitude, 
+    longitude, big_url, small_url, create_date
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from cpc_alarm_info
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    <!--@mbg.generated-->
+    delete from cpc_alarm_info
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.xiao.dao.dto.CpcAlarmInfo">
+    <!--@mbg.generated-->
+    insert into cpc_alarm_info (id, alarm_id, person_id, 
+      person_id_code, person_name, similarity_degree, 
+      shot_time, alarm_community_id, alarm_community_dmdm, 
+      device_code, device_name, device_id, 
+      latitude, longitude, big_url, 
+      small_url, create_date)
+    values (#{id,jdbcType=VARCHAR}, #{alarmId,jdbcType=VARCHAR}, #{personId,jdbcType=BIGINT}, 
+      #{personIdCode,jdbcType=VARCHAR}, #{personName,jdbcType=VARCHAR}, #{similarityDegree,jdbcType=DOUBLE}, 
+      #{shotTime,jdbcType=TIMESTAMP}, #{alarmCommunityId,jdbcType=VARCHAR}, #{alarmCommunityDmdm,jdbcType=VARCHAR}, 
+      #{deviceCode,jdbcType=VARCHAR}, #{deviceName,jdbcType=VARCHAR}, #{deviceId,jdbcType=VARCHAR}, 
+      #{latitude,jdbcType=DOUBLE}, #{longitude,jdbcType=DOUBLE}, #{bigUrl,jdbcType=VARCHAR}, 
+      #{smallUrl,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.xiao.dao.dto.CpcAlarmInfo">
+    <!--@mbg.generated-->
+    insert into cpc_alarm_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null and id != ''">
+        id,
+      </if>
+      <if test="alarmId != null and alarmId != ''">
+        alarm_id,
+      </if>
+      <if test="personId != null">
+        person_id,
+      </if>
+      <if test="personIdCode != null and personIdCode != ''">
+        person_id_code,
+      </if>
+      <if test="personName != null and personName != ''">
+        person_name,
+      </if>
+      <if test="similarityDegree != null">
+        similarity_degree,
+      </if>
+      <if test="shotTime != null">
+        shot_time,
+      </if>
+      <if test="alarmCommunityId != null and alarmCommunityId != ''">
+        alarm_community_id,
+      </if>
+      <if test="alarmCommunityDmdm != null and alarmCommunityDmdm != ''">
+        alarm_community_dmdm,
+      </if>
+      <if test="deviceCode != null and deviceCode != ''">
+        device_code,
+      </if>
+      <if test="deviceName != null and deviceName != ''">
+        device_name,
+      </if>
+      <if test="deviceId != null and deviceId != ''">
+        device_id,
+      </if>
+      <if test="latitude != null">
+        latitude,
+      </if>
+      <if test="longitude != null">
+        longitude,
+      </if>
+      <if test="bigUrl != null and bigUrl != ''">
+        big_url,
+      </if>
+      <if test="smallUrl != null and smallUrl != ''">
+        small_url,
+      </if>
+      <if test="createDate != null">
+        create_date,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null and id != ''">
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="alarmId != null and alarmId != ''">
+        #{alarmId,jdbcType=VARCHAR},
+      </if>
+      <if test="personId != null">
+        #{personId,jdbcType=BIGINT},
+      </if>
+      <if test="personIdCode != null and personIdCode != ''">
+        #{personIdCode,jdbcType=VARCHAR},
+      </if>
+      <if test="personName != null and personName != ''">
+        #{personName,jdbcType=VARCHAR},
+      </if>
+      <if test="similarityDegree != null">
+        #{similarityDegree,jdbcType=DOUBLE},
+      </if>
+      <if test="shotTime != null">
+        #{shotTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="alarmCommunityId != null and alarmCommunityId != ''">
+        #{alarmCommunityId,jdbcType=VARCHAR},
+      </if>
+      <if test="alarmCommunityDmdm != null and alarmCommunityDmdm != ''">
+        #{alarmCommunityDmdm,jdbcType=VARCHAR},
+      </if>
+      <if test="deviceCode != null and deviceCode != ''">
+        #{deviceCode,jdbcType=VARCHAR},
+      </if>
+      <if test="deviceName != null and deviceName != ''">
+        #{deviceName,jdbcType=VARCHAR},
+      </if>
+      <if test="deviceId != null and deviceId != ''">
+        #{deviceId,jdbcType=VARCHAR},
+      </if>
+      <if test="latitude != null">
+        #{latitude,jdbcType=DOUBLE},
+      </if>
+      <if test="longitude != null">
+        #{longitude,jdbcType=DOUBLE},
+      </if>
+      <if test="bigUrl != null and bigUrl != ''">
+        #{bigUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="smallUrl != null and smallUrl != ''">
+        #{smallUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xiao.dao.dto.CpcAlarmInfo">
+    <!--@mbg.generated-->
+    update cpc_alarm_info
+    <set>
+      <if test="alarmId != null and alarmId != ''">
+        alarm_id = #{alarmId,jdbcType=VARCHAR},
+      </if>
+      <if test="personId != null">
+        person_id = #{personId,jdbcType=BIGINT},
+      </if>
+      <if test="personIdCode != null and personIdCode != ''">
+        person_id_code = #{personIdCode,jdbcType=VARCHAR},
+      </if>
+      <if test="personName != null and personName != ''">
+        person_name = #{personName,jdbcType=VARCHAR},
+      </if>
+      <if test="similarityDegree != null">
+        similarity_degree = #{similarityDegree,jdbcType=DOUBLE},
+      </if>
+      <if test="shotTime != null">
+        shot_time = #{shotTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="alarmCommunityId != null and alarmCommunityId != ''">
+        alarm_community_id = #{alarmCommunityId,jdbcType=VARCHAR},
+      </if>
+      <if test="alarmCommunityDmdm != null and alarmCommunityDmdm != ''">
+        alarm_community_dmdm = #{alarmCommunityDmdm,jdbcType=VARCHAR},
+      </if>
+      <if test="deviceCode != null and deviceCode != ''">
+        device_code = #{deviceCode,jdbcType=VARCHAR},
+      </if>
+      <if test="deviceName != null and deviceName != ''">
+        device_name = #{deviceName,jdbcType=VARCHAR},
+      </if>
+      <if test="deviceId != null and deviceId != ''">
+        device_id = #{deviceId,jdbcType=VARCHAR},
+      </if>
+      <if test="latitude != null">
+        latitude = #{latitude,jdbcType=DOUBLE},
+      </if>
+      <if test="longitude != null">
+        longitude = #{longitude,jdbcType=DOUBLE},
+      </if>
+      <if test="bigUrl != null and bigUrl != ''">
+        big_url = #{bigUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="smallUrl != null and smallUrl != ''">
+        small_url = #{smallUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        create_date = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xiao.dao.dto.CpcAlarmInfo">
+    <!--@mbg.generated-->
+    update cpc_alarm_info
+    set alarm_id = #{alarmId,jdbcType=VARCHAR},
+      person_id = #{personId,jdbcType=BIGINT},
+      person_id_code = #{personIdCode,jdbcType=VARCHAR},
+      person_name = #{personName,jdbcType=VARCHAR},
+      similarity_degree = #{similarityDegree,jdbcType=DOUBLE},
+      shot_time = #{shotTime,jdbcType=TIMESTAMP},
+      alarm_community_id = #{alarmCommunityId,jdbcType=VARCHAR},
+      alarm_community_dmdm = #{alarmCommunityDmdm,jdbcType=VARCHAR},
+      device_code = #{deviceCode,jdbcType=VARCHAR},
+      device_name = #{deviceName,jdbcType=VARCHAR},
+      device_id = #{deviceId,jdbcType=VARCHAR},
+      latitude = #{latitude,jdbcType=DOUBLE},
+      longitude = #{longitude,jdbcType=DOUBLE},
+      big_url = #{bigUrl,jdbcType=VARCHAR},
+      small_url = #{smallUrl,jdbcType=VARCHAR},
+      create_date = #{createDate,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+</mapper>

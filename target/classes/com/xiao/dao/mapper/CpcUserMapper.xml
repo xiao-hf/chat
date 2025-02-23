@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiao.dao.inter.CpcUserMapper">
+  <resultMap id="BaseResultMap" type="com.xiao.dao.dto.CpcUser">
+    <!--@mbg.generated-->
+    <!--@Table cpc_user-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="token" jdbcType="VARCHAR" property="token" />
+    <result column="user_no" jdbcType="VARCHAR" property="userNo" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="user_phone" jdbcType="VARCHAR" property="userPhone" />
+    <result column="user_unit_no" jdbcType="VARCHAR" property="userUnitNo" />
+    <result column="user_enable" jdbcType="BIT" property="userEnable" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="update_date" jdbcType="TIMESTAMP" property="updateDate" />
+    <result column="create_user_id" jdbcType="BIGINT" property="createUserId" />
+    <result column="update_user_id" jdbcType="BIGINT" property="updateUserId" />
+    <result column="login_time" jdbcType="TIMESTAMP" property="loginTime" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, token, user_no, user_name, user_phone, user_unit_no, user_enable, create_date, 
+    update_date, create_user_id, update_user_id, login_time, `password`
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from cpc_user
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <!--@mbg.generated-->
+    delete from cpc_user
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.xiao.dao.dto.CpcUser">
+    <!--@mbg.generated-->
+    insert into cpc_user (id, token, user_no, 
+      user_name, user_phone, user_unit_no, 
+      user_enable, create_date, update_date, 
+      create_user_id, update_user_id, login_time, 
+      `password`)
+    values (#{id,jdbcType=BIGINT}, #{token,jdbcType=VARCHAR}, #{userNo,jdbcType=VARCHAR}, 
+      #{userName,jdbcType=VARCHAR}, #{userPhone,jdbcType=VARCHAR}, #{userUnitNo,jdbcType=VARCHAR}, 
+      #{userEnable,jdbcType=BIT}, #{createDate,jdbcType=TIMESTAMP}, #{updateDate,jdbcType=TIMESTAMP}, 
+      #{createUserId,jdbcType=BIGINT}, #{updateUserId,jdbcType=BIGINT}, #{loginTime,jdbcType=TIMESTAMP}, 
+      #{password,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.xiao.dao.dto.CpcUser">
+    <!--@mbg.generated-->
+    insert into cpc_user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="token != null and token != ''">
+        token,
+      </if>
+      <if test="userNo != null and userNo != ''">
+        user_no,
+      </if>
+      <if test="userName != null and userName != ''">
+        user_name,
+      </if>
+      <if test="userPhone != null and userPhone != ''">
+        user_phone,
+      </if>
+      <if test="userUnitNo != null and userUnitNo != ''">
+        user_unit_no,
+      </if>
+      <if test="userEnable != null">
+        user_enable,
+      </if>
+      <if test="createDate != null">
+        create_date,
+      </if>
+      <if test="updateDate != null">
+        update_date,
+      </if>
+      <if test="createUserId != null">
+        create_user_id,
+      </if>
+      <if test="updateUserId != null">
+        update_user_id,
+      </if>
+      <if test="loginTime != null">
+        login_time,
+      </if>
+      <if test="password != null and password != ''">
+        `password`,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="token != null and token != ''">
+        #{token,jdbcType=VARCHAR},
+      </if>
+      <if test="userNo != null and userNo != ''">
+        #{userNo,jdbcType=VARCHAR},
+      </if>
+      <if test="userName != null and userName != ''">
+        #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userPhone != null and userPhone != ''">
+        #{userPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="userUnitNo != null and userUnitNo != ''">
+        #{userUnitNo,jdbcType=VARCHAR},
+      </if>
+      <if test="userEnable != null">
+        #{userEnable,jdbcType=BIT},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUserId != null">
+        #{createUserId,jdbcType=BIGINT},
+      </if>
+      <if test="updateUserId != null">
+        #{updateUserId,jdbcType=BIGINT},
+      </if>
+      <if test="loginTime != null">
+        #{loginTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="password != null and password != ''">
+        #{password,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xiao.dao.dto.CpcUser">
+    <!--@mbg.generated-->
+    update cpc_user
+    <set>
+      <if test="token != null and token != ''">
+        token = #{token,jdbcType=VARCHAR},
+      </if>
+      <if test="userNo != null and userNo != ''">
+        user_no = #{userNo,jdbcType=VARCHAR},
+      </if>
+      <if test="userName != null and userName != ''">
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userPhone != null and userPhone != ''">
+        user_phone = #{userPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="userUnitNo != null and userUnitNo != ''">
+        user_unit_no = #{userUnitNo,jdbcType=VARCHAR},
+      </if>
+      <if test="userEnable != null">
+        user_enable = #{userEnable,jdbcType=BIT},
+      </if>
+      <if test="createDate != null">
+        create_date = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateDate != null">
+        update_date = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUserId != null">
+        create_user_id = #{createUserId,jdbcType=BIGINT},
+      </if>
+      <if test="updateUserId != null">
+        update_user_id = #{updateUserId,jdbcType=BIGINT},
+      </if>
+      <if test="loginTime != null">
+        login_time = #{loginTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="password != null and password != ''">
+        `password` = #{password,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xiao.dao.dto.CpcUser">
+    <!--@mbg.generated-->
+    update cpc_user
+    set token = #{token,jdbcType=VARCHAR},
+      user_no = #{userNo,jdbcType=VARCHAR},
+      user_name = #{userName,jdbcType=VARCHAR},
+      user_phone = #{userPhone,jdbcType=VARCHAR},
+      user_unit_no = #{userUnitNo,jdbcType=VARCHAR},
+      user_enable = #{userEnable,jdbcType=BIT},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
+      update_date = #{updateDate,jdbcType=TIMESTAMP},
+      create_user_id = #{createUserId,jdbcType=BIGINT},
+      update_user_id = #{updateUserId,jdbcType=BIGINT},
+      login_time = #{loginTime,jdbcType=TIMESTAMP},
+      `password` = #{password,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+
+<!--auto generated by MybatisCodeHelper on 2025-02-23-->
+  <select id="selectByAll" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from cpc_user
+        <where>
+            <if test="id != null">
+                and id=#{id,jdbcType=BIGINT}
+            </if>
+            <if test="token != null and token != ''">
+                and token=#{token,jdbcType=VARCHAR}
+            </if>
+            <if test="userNo != null and userNo != ''">
+                and user_no=#{userNo,jdbcType=VARCHAR}
+            </if>
+            <if test="userName != null and userName != ''">
+                and user_name=#{userName,jdbcType=VARCHAR}
+            </if>
+            <if test="userPhone != null and userPhone != ''">
+                and user_phone=#{userPhone,jdbcType=VARCHAR}
+            </if>
+            <if test="userUnitNo != null and userUnitNo != ''">
+                and user_unit_no=#{userUnitNo,jdbcType=VARCHAR}
+            </if>
+            <if test="userEnable != null">
+                and user_enable=#{userEnable,jdbcType=BIT}
+            </if>
+            <if test="createDate != null">
+                and create_date=#{createDate,jdbcType=TIMESTAMP}
+            </if>
+            <if test="updateDate != null">
+                and update_date=#{updateDate,jdbcType=TIMESTAMP}
+            </if>
+            <if test="createUserId != null">
+                and create_user_id=#{createUserId,jdbcType=BIGINT}
+            </if>
+            <if test="updateUserId != null">
+                and update_user_id=#{updateUserId,jdbcType=BIGINT}
+            </if>
+            <if test="loginTime != null">
+                and login_time=#{loginTime,jdbcType=TIMESTAMP}
+            </if>
+        </where>
+    </select>
+</mapper>

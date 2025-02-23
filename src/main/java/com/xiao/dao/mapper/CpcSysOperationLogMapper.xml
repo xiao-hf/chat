@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiao.dao.inter.CpcSysOperationLogMapper">
+  <resultMap id="BaseResultMap" type="com.xiao.dao.dto.CpcSysOperationLog">
+    <!--@mbg.generated-->
+    <!--@Table cpc_sys_operation_log-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="unit_no" jdbcType="VARCHAR" property="unitNo" />
+    <result column="unit_name" jdbcType="VARCHAR" property="unitName" />
+    <result column="operation_title" jdbcType="VARCHAR" property="operationTitle" />
+    <result column="operation_ip" jdbcType="VARCHAR" property="operationIp" />
+    <result column="operation_name" jdbcType="VARCHAR" property="operationName" />
+    <result column="operation_url" jdbcType="VARCHAR" property="operationUrl" />
+    <result column="operation_time" jdbcType="TIMESTAMP" property="operationTime" />
+    <result column="operation_status" jdbcType="INTEGER" property="operationStatus" />
+    <result column="operation_param" jdbcType="VARCHAR" property="operationParam" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, user_id, user_name, unit_no, unit_name, operation_title, operation_ip, operation_name, 
+    operation_url, operation_time, operation_status, operation_param, remark
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from cpc_sys_operation_log
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <!--@mbg.generated-->
+    delete from cpc_sys_operation_log
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.xiao.dao.dto.CpcSysOperationLog">
+    <!--@mbg.generated-->
+    insert into cpc_sys_operation_log (id, user_id, user_name, 
+      unit_no, unit_name, operation_title, 
+      operation_ip, operation_name, operation_url, 
+      operation_time, operation_status, operation_param, 
+      remark)
+    values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR}, 
+      #{unitNo,jdbcType=VARCHAR}, #{unitName,jdbcType=VARCHAR}, #{operationTitle,jdbcType=VARCHAR}, 
+      #{operationIp,jdbcType=VARCHAR}, #{operationName,jdbcType=VARCHAR}, #{operationUrl,jdbcType=VARCHAR}, 
+      #{operationTime,jdbcType=TIMESTAMP}, #{operationStatus,jdbcType=INTEGER}, #{operationParam,jdbcType=VARCHAR}, 
+      #{remark,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.xiao.dao.dto.CpcSysOperationLog">
+    <!--@mbg.generated-->
+    insert into cpc_sys_operation_log
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="userId != null and userId != ''">
+        user_id,
+      </if>
+      <if test="userName != null and userName != ''">
+        user_name,
+      </if>
+      <if test="unitNo != null and unitNo != ''">
+        unit_no,
+      </if>
+      <if test="unitName != null and unitName != ''">
+        unit_name,
+      </if>
+      <if test="operationTitle != null and operationTitle != ''">
+        operation_title,
+      </if>
+      <if test="operationIp != null and operationIp != ''">
+        operation_ip,
+      </if>
+      <if test="operationName != null and operationName != ''">
+        operation_name,
+      </if>
+      <if test="operationUrl != null and operationUrl != ''">
+        operation_url,
+      </if>
+      <if test="operationTime != null">
+        operation_time,
+      </if>
+      <if test="operationStatus != null">
+        operation_status,
+      </if>
+      <if test="operationParam != null and operationParam != ''">
+        operation_param,
+      </if>
+      <if test="remark != null and remark != ''">
+        remark,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="userId != null and userId != ''">
+        #{userId,jdbcType=VARCHAR},
+      </if>
+      <if test="userName != null and userName != ''">
+        #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="unitNo != null and unitNo != ''">
+        #{unitNo,jdbcType=VARCHAR},
+      </if>
+      <if test="unitName != null and unitName != ''">
+        #{unitName,jdbcType=VARCHAR},
+      </if>
+      <if test="operationTitle != null and operationTitle != ''">
+        #{operationTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="operationIp != null and operationIp != ''">
+        #{operationIp,jdbcType=VARCHAR},
+      </if>
+      <if test="operationName != null and operationName != ''">
+        #{operationName,jdbcType=VARCHAR},
+      </if>
+      <if test="operationUrl != null and operationUrl != ''">
+        #{operationUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="operationTime != null">
+        #{operationTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operationStatus != null">
+        #{operationStatus,jdbcType=INTEGER},
+      </if>
+      <if test="operationParam != null and operationParam != ''">
+        #{operationParam,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null and remark != ''">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xiao.dao.dto.CpcSysOperationLog">
+    <!--@mbg.generated-->
+    update cpc_sys_operation_log
+    <set>
+      <if test="userId != null and userId != ''">
+        user_id = #{userId,jdbcType=VARCHAR},
+      </if>
+      <if test="userName != null and userName != ''">
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="unitNo != null and unitNo != ''">
+        unit_no = #{unitNo,jdbcType=VARCHAR},
+      </if>
+      <if test="unitName != null and unitName != ''">
+        unit_name = #{unitName,jdbcType=VARCHAR},
+      </if>
+      <if test="operationTitle != null and operationTitle != ''">
+        operation_title = #{operationTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="operationIp != null and operationIp != ''">
+        operation_ip = #{operationIp,jdbcType=VARCHAR},
+      </if>
+      <if test="operationName != null and operationName != ''">
+        operation_name = #{operationName,jdbcType=VARCHAR},
+      </if>
+      <if test="operationUrl != null and operationUrl != ''">
+        operation_url = #{operationUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="operationTime != null">
+        operation_time = #{operationTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operationStatus != null">
+        operation_status = #{operationStatus,jdbcType=INTEGER},
+      </if>
+      <if test="operationParam != null and operationParam != ''">
+        operation_param = #{operationParam,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null and remark != ''">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xiao.dao.dto.CpcSysOperationLog">
+    <!--@mbg.generated-->
+    update cpc_sys_operation_log
+    set user_id = #{userId,jdbcType=VARCHAR},
+      user_name = #{userName,jdbcType=VARCHAR},
+      unit_no = #{unitNo,jdbcType=VARCHAR},
+      unit_name = #{unitName,jdbcType=VARCHAR},
+      operation_title = #{operationTitle,jdbcType=VARCHAR},
+      operation_ip = #{operationIp,jdbcType=VARCHAR},
+      operation_name = #{operationName,jdbcType=VARCHAR},
+      operation_url = #{operationUrl,jdbcType=VARCHAR},
+      operation_time = #{operationTime,jdbcType=TIMESTAMP},
+      operation_status = #{operationStatus,jdbcType=INTEGER},
+      operation_param = #{operationParam,jdbcType=VARCHAR},
+      remark = #{remark,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

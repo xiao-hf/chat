@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiao.dao.inter.CpcUnitMapper">
+  <resultMap id="BaseResultMap" type="com.xiao.dao.dto.CpcUnit">
+    <!--@mbg.generated-->
+    <!--@Table cpc_unit-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="unit_name" jdbcType="VARCHAR" property="unitName" />
+    <result column="unit_no" jdbcType="VARCHAR" property="unitNo" />
+    <result column="unit_adress" jdbcType="VARCHAR" property="unitAdress" />
+    <result column="unit_num" jdbcType="INTEGER" property="unitNum" />
+    <result column="unit_parent_unit_no" jdbcType="VARCHAR" property="unitParentUnitNo" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="update_date" jdbcType="TIMESTAMP" property="updateDate" />
+    <result column="create_user" jdbcType="VARCHAR" property="createUser" />
+    <result column="update_user" jdbcType="VARCHAR" property="updateUser" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, unit_name, unit_no, unit_adress, unit_num, unit_parent_unit_no, `type`, create_date, 
+    update_date, create_user, update_user
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from cpc_unit
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <!--@mbg.generated-->
+    delete from cpc_unit
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.xiao.dao.dto.CpcUnit" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into cpc_unit (unit_name, unit_no, unit_adress, 
+      unit_num, unit_parent_unit_no, `type`, 
+      create_date, update_date, create_user, 
+      update_user)
+    values (#{unitName,jdbcType=VARCHAR}, #{unitNo,jdbcType=VARCHAR}, #{unitAdress,jdbcType=VARCHAR}, 
+      #{unitNum,jdbcType=INTEGER}, #{unitParentUnitNo,jdbcType=VARCHAR}, #{type,jdbcType=INTEGER}, 
+      #{createDate,jdbcType=TIMESTAMP}, #{updateDate,jdbcType=TIMESTAMP}, #{createUser,jdbcType=VARCHAR}, 
+      #{updateUser,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.xiao.dao.dto.CpcUnit" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into cpc_unit
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="unitName != null and unitName != ''">
+        unit_name,
+      </if>
+      <if test="unitNo != null and unitNo != ''">
+        unit_no,
+      </if>
+      <if test="unitAdress != null and unitAdress != ''">
+        unit_adress,
+      </if>
+      <if test="unitNum != null">
+        unit_num,
+      </if>
+      <if test="unitParentUnitNo != null and unitParentUnitNo != ''">
+        unit_parent_unit_no,
+      </if>
+      <if test="type != null">
+        `type`,
+      </if>
+      <if test="createDate != null">
+        create_date,
+      </if>
+      <if test="updateDate != null">
+        update_date,
+      </if>
+      <if test="createUser != null and createUser != ''">
+        create_user,
+      </if>
+      <if test="updateUser != null and updateUser != ''">
+        update_user,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="unitName != null and unitName != ''">
+        #{unitName,jdbcType=VARCHAR},
+      </if>
+      <if test="unitNo != null and unitNo != ''">
+        #{unitNo,jdbcType=VARCHAR},
+      </if>
+      <if test="unitAdress != null and unitAdress != ''">
+        #{unitAdress,jdbcType=VARCHAR},
+      </if>
+      <if test="unitNum != null">
+        #{unitNum,jdbcType=INTEGER},
+      </if>
+      <if test="unitParentUnitNo != null and unitParentUnitNo != ''">
+        #{unitParentUnitNo,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=INTEGER},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUser != null and createUser != ''">
+        #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateUser != null and updateUser != ''">
+        #{updateUser,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xiao.dao.dto.CpcUnit">
+    <!--@mbg.generated-->
+    update cpc_unit
+    <set>
+      <if test="unitName != null and unitName != ''">
+        unit_name = #{unitName,jdbcType=VARCHAR},
+      </if>
+      <if test="unitNo != null and unitNo != ''">
+        unit_no = #{unitNo,jdbcType=VARCHAR},
+      </if>
+      <if test="unitAdress != null and unitAdress != ''">
+        unit_adress = #{unitAdress,jdbcType=VARCHAR},
+      </if>
+      <if test="unitNum != null">
+        unit_num = #{unitNum,jdbcType=INTEGER},
+      </if>
+      <if test="unitParentUnitNo != null and unitParentUnitNo != ''">
+        unit_parent_unit_no = #{unitParentUnitNo,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        `type` = #{type,jdbcType=INTEGER},
+      </if>
+      <if test="createDate != null">
+        create_date = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateDate != null">
+        update_date = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUser != null and createUser != ''">
+        create_user = #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateUser != null and updateUser != ''">
+        update_user = #{updateUser,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xiao.dao.dto.CpcUnit">
+    <!--@mbg.generated-->
+    update cpc_unit
+    set unit_name = #{unitName,jdbcType=VARCHAR},
+      unit_no = #{unitNo,jdbcType=VARCHAR},
+      unit_adress = #{unitAdress,jdbcType=VARCHAR},
+      unit_num = #{unitNum,jdbcType=INTEGER},
+      unit_parent_unit_no = #{unitParentUnitNo,jdbcType=VARCHAR},
+      `type` = #{type,jdbcType=INTEGER},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
+      update_date = #{updateDate,jdbcType=TIMESTAMP},
+      create_user = #{createUser,jdbcType=VARCHAR},
+      update_user = #{updateUser,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

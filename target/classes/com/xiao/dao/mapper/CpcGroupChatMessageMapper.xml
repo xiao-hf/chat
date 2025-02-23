@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiao.dao.inter.CpcGroupChatMessageMapper">
+  <resultMap id="BaseResultMap" type="com.xiao.dao.dto.CpcGroupChatMessage">
+    <!--@mbg.generated-->
+    <!--@Table cpc_group_chat_message-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="group_id" jdbcType="BIGINT" property="groupId" />
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+    <result column="content_type" jdbcType="OTHER" property="contentType" />
+    <result column="is_deleted" jdbcType="TINYINT" property="isDeleted" />
+    <result column="is_key_message" jdbcType="TINYINT" property="isKeyMessage" />
+    <result column="is_pinned" jdbcType="TINYINT" property="isPinned" />
+    <result column="pinned_time" jdbcType="TIMESTAMP" property="pinnedTime" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_user_id" jdbcType="BIGINT" property="updateUserId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, group_id, content, content_type, is_deleted, is_key_message, is_pinned, pinned_time, 
+    create_time, update_user_id
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from cpc_group_chat_message
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <!--@mbg.generated-->
+    delete from cpc_group_chat_message
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.xiao.dao.dto.CpcGroupChatMessage" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into cpc_group_chat_message (group_id, content, content_type, 
+      is_deleted, is_key_message, is_pinned, 
+      pinned_time, create_time, update_user_id
+      )
+    values (#{groupId,jdbcType=BIGINT}, #{content,jdbcType=LONGVARCHAR}, #{contentType,jdbcType=OTHER}, 
+      #{isDeleted,jdbcType=TINYINT}, #{isKeyMessage,jdbcType=TINYINT}, #{isPinned,jdbcType=TINYINT}, 
+      #{pinnedTime,jdbcType=TIMESTAMP}, #{createTime,jdbcType=TIMESTAMP}, #{updateUserId,jdbcType=BIGINT}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.xiao.dao.dto.CpcGroupChatMessage" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into cpc_group_chat_message
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="groupId != null">
+        group_id,
+      </if>
+      <if test="content != null and content != ''">
+        content,
+      </if>
+      <if test="contentType != null">
+        content_type,
+      </if>
+      <if test="isDeleted != null">
+        is_deleted,
+      </if>
+      <if test="isKeyMessage != null">
+        is_key_message,
+      </if>
+      <if test="isPinned != null">
+        is_pinned,
+      </if>
+      <if test="pinnedTime != null">
+        pinned_time,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateUserId != null">
+        update_user_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="groupId != null">
+        #{groupId,jdbcType=BIGINT},
+      </if>
+      <if test="content != null and content != ''">
+        #{content,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="contentType != null">
+        #{contentType,jdbcType=OTHER},
+      </if>
+      <if test="isDeleted != null">
+        #{isDeleted,jdbcType=TINYINT},
+      </if>
+      <if test="isKeyMessage != null">
+        #{isKeyMessage,jdbcType=TINYINT},
+      </if>
+      <if test="isPinned != null">
+        #{isPinned,jdbcType=TINYINT},
+      </if>
+      <if test="pinnedTime != null">
+        #{pinnedTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUserId != null">
+        #{updateUserId,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xiao.dao.dto.CpcGroupChatMessage">
+    <!--@mbg.generated-->
+    update cpc_group_chat_message
+    <set>
+      <if test="groupId != null">
+        group_id = #{groupId,jdbcType=BIGINT},
+      </if>
+      <if test="content != null and content != ''">
+        content = #{content,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="contentType != null">
+        content_type = #{contentType,jdbcType=OTHER},
+      </if>
+      <if test="isDeleted != null">
+        is_deleted = #{isDeleted,jdbcType=TINYINT},
+      </if>
+      <if test="isKeyMessage != null">
+        is_key_message = #{isKeyMessage,jdbcType=TINYINT},
+      </if>
+      <if test="isPinned != null">
+        is_pinned = #{isPinned,jdbcType=TINYINT},
+      </if>
+      <if test="pinnedTime != null">
+        pinned_time = #{pinnedTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUserId != null">
+        update_user_id = #{updateUserId,jdbcType=BIGINT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xiao.dao.dto.CpcGroupChatMessage">
+    <!--@mbg.generated-->
+    update cpc_group_chat_message
+    set group_id = #{groupId,jdbcType=BIGINT},
+      content = #{content,jdbcType=LONGVARCHAR},
+      content_type = #{contentType,jdbcType=OTHER},
+      is_deleted = #{isDeleted,jdbcType=TINYINT},
+      is_key_message = #{isKeyMessage,jdbcType=TINYINT},
+      is_pinned = #{isPinned,jdbcType=TINYINT},
+      pinned_time = #{pinnedTime,jdbcType=TIMESTAMP},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_user_id = #{updateUserId,jdbcType=BIGINT}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+
+<!--auto generated by MybatisCodeHelper on 2025-02-23-->
+  <select id="selectAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from cpc_group_chat_message
+  </select>
+
+<!--auto generated by MybatisCodeHelper on 2025-02-23-->
+  <select id="selectByGroupId" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from cpc_group_chat_message
+    where group_id=#{groupId,jdbcType=BIGINT}
+  </select>
+</mapper>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiao.dao.inter.CpcRoleMapper">
+  <resultMap id="BaseResultMap" type="com.xiao.dao.dto.CpcRole">
+    <!--@mbg.generated-->
+    <!--@Table cpc_role-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="role_name" jdbcType="VARCHAR" property="roleName" />
+    <result column="role_code" jdbcType="VARCHAR" property="roleCode" />
+    <result column="role_enable" jdbcType="BIT" property="roleEnable" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="update_date" jdbcType="TIMESTAMP" property="updateDate" />
+    <result column="create_user_id" jdbcType="BIGINT" property="createUserId" />
+    <result column="update_user_id" jdbcType="BIGINT" property="updateUserId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, role_name, role_code, role_enable, remark, create_date, update_date, create_user_id, 
+    update_user_id
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from cpc_role
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <!--@mbg.generated-->
+    delete from cpc_role
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.xiao.dao.dto.CpcRole">
+    <!--@mbg.generated-->
+    insert into cpc_role (id, role_name, role_code, 
+      role_enable, remark, create_date, 
+      update_date, create_user_id, update_user_id
+      )
+    values (#{id,jdbcType=BIGINT}, #{roleName,jdbcType=VARCHAR}, #{roleCode,jdbcType=VARCHAR}, 
+      #{roleEnable,jdbcType=BIT}, #{remark,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}, 
+      #{updateDate,jdbcType=TIMESTAMP}, #{createUserId,jdbcType=BIGINT}, #{updateUserId,jdbcType=BIGINT}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.xiao.dao.dto.CpcRole">
+    <!--@mbg.generated-->
+    insert into cpc_role
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="roleName != null and roleName != ''">
+        role_name,
+      </if>
+      <if test="roleCode != null and roleCode != ''">
+        role_code,
+      </if>
+      <if test="roleEnable != null">
+        role_enable,
+      </if>
+      <if test="remark != null and remark != ''">
+        remark,
+      </if>
+      <if test="createDate != null">
+        create_date,
+      </if>
+      <if test="updateDate != null">
+        update_date,
+      </if>
+      <if test="createUserId != null">
+        create_user_id,
+      </if>
+      <if test="updateUserId != null">
+        update_user_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="roleName != null and roleName != ''">
+        #{roleName,jdbcType=VARCHAR},
+      </if>
+      <if test="roleCode != null and roleCode != ''">
+        #{roleCode,jdbcType=VARCHAR},
+      </if>
+      <if test="roleEnable != null">
+        #{roleEnable,jdbcType=BIT},
+      </if>
+      <if test="remark != null and remark != ''">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUserId != null">
+        #{createUserId,jdbcType=BIGINT},
+      </if>
+      <if test="updateUserId != null">
+        #{updateUserId,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xiao.dao.dto.CpcRole">
+    <!--@mbg.generated-->
+    update cpc_role
+    <set>
+      <if test="roleName != null and roleName != ''">
+        role_name = #{roleName,jdbcType=VARCHAR},
+      </if>
+      <if test="roleCode != null and roleCode != ''">
+        role_code = #{roleCode,jdbcType=VARCHAR},
+      </if>
+      <if test="roleEnable != null">
+        role_enable = #{roleEnable,jdbcType=BIT},
+      </if>
+      <if test="remark != null and remark != ''">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        create_date = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateDate != null">
+        update_date = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUserId != null">
+        create_user_id = #{createUserId,jdbcType=BIGINT},
+      </if>
+      <if test="updateUserId != null">
+        update_user_id = #{updateUserId,jdbcType=BIGINT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xiao.dao.dto.CpcRole">
+    <!--@mbg.generated-->
+    update cpc_role
+    set role_name = #{roleName,jdbcType=VARCHAR},
+      role_code = #{roleCode,jdbcType=VARCHAR},
+      role_enable = #{roleEnable,jdbcType=BIT},
+      remark = #{remark,jdbcType=VARCHAR},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
+      update_date = #{updateDate,jdbcType=TIMESTAMP},
+      create_user_id = #{createUserId,jdbcType=BIGINT},
+      update_user_id = #{updateUserId,jdbcType=BIGINT}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

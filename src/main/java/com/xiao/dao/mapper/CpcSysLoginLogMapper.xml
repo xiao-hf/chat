@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiao.dao.inter.CpcSysLoginLogMapper">
+  <resultMap id="BaseResultMap" type="com.xiao.dao.dto.CpcSysLoginLog">
+    <!--@mbg.generated-->
+    <!--@Table cpc_sys_login_log-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="unit_no" jdbcType="VARCHAR" property="unitNo" />
+    <result column="unit_name" jdbcType="VARCHAR" property="unitName" />
+    <result column="login_ip" jdbcType="VARCHAR" property="loginIp" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="login_time" jdbcType="TIMESTAMP" property="loginTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, user_id, user_name, unit_no, unit_name, login_ip, `status`, remark, login_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from cpc_sys_login_log
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <!--@mbg.generated-->
+    delete from cpc_sys_login_log
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.xiao.dao.dto.CpcSysLoginLog">
+    <!--@mbg.generated-->
+    insert into cpc_sys_login_log (id, user_id, user_name, 
+      unit_no, unit_name, login_ip, 
+      `status`, remark, login_time
+      )
+    values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR}, 
+      #{unitNo,jdbcType=VARCHAR}, #{unitName,jdbcType=VARCHAR}, #{loginIp,jdbcType=VARCHAR}, 
+      #{status,jdbcType=INTEGER}, #{remark,jdbcType=VARCHAR}, #{loginTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.xiao.dao.dto.CpcSysLoginLog">
+    <!--@mbg.generated-->
+    insert into cpc_sys_login_log
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="userId != null and userId != ''">
+        user_id,
+      </if>
+      <if test="userName != null and userName != ''">
+        user_name,
+      </if>
+      <if test="unitNo != null and unitNo != ''">
+        unit_no,
+      </if>
+      <if test="unitName != null and unitName != ''">
+        unit_name,
+      </if>
+      <if test="loginIp != null and loginIp != ''">
+        login_ip,
+      </if>
+      <if test="status != null">
+        `status`,
+      </if>
+      <if test="remark != null and remark != ''">
+        remark,
+      </if>
+      <if test="loginTime != null">
+        login_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="userId != null and userId != ''">
+        #{userId,jdbcType=VARCHAR},
+      </if>
+      <if test="userName != null and userName != ''">
+        #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="unitNo != null and unitNo != ''">
+        #{unitNo,jdbcType=VARCHAR},
+      </if>
+      <if test="unitName != null and unitName != ''">
+        #{unitName,jdbcType=VARCHAR},
+      </if>
+      <if test="loginIp != null and loginIp != ''">
+        #{loginIp,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="remark != null and remark != ''">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="loginTime != null">
+        #{loginTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xiao.dao.dto.CpcSysLoginLog">
+    <!--@mbg.generated-->
+    update cpc_sys_login_log
+    <set>
+      <if test="userId != null and userId != ''">
+        user_id = #{userId,jdbcType=VARCHAR},
+      </if>
+      <if test="userName != null and userName != ''">
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="unitNo != null and unitNo != ''">
+        unit_no = #{unitNo,jdbcType=VARCHAR},
+      </if>
+      <if test="unitName != null and unitName != ''">
+        unit_name = #{unitName,jdbcType=VARCHAR},
+      </if>
+      <if test="loginIp != null and loginIp != ''">
+        login_ip = #{loginIp,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        `status` = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="remark != null and remark != ''">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="loginTime != null">
+        login_time = #{loginTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xiao.dao.dto.CpcSysLoginLog">
+    <!--@mbg.generated-->
+    update cpc_sys_login_log
+    set user_id = #{userId,jdbcType=VARCHAR},
+      user_name = #{userName,jdbcType=VARCHAR},
+      unit_no = #{unitNo,jdbcType=VARCHAR},
+      unit_name = #{unitName,jdbcType=VARCHAR},
+      login_ip = #{loginIp,jdbcType=VARCHAR},
+      `status` = #{status,jdbcType=INTEGER},
+      remark = #{remark,jdbcType=VARCHAR},
+      login_time = #{loginTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiao.dao.inter.CpcJobMapper">
+  <resultMap id="BaseResultMap" type="com.xiao.dao.dto.CpcJob">
+    <!--@mbg.generated-->
+    <!--@Table cpc_job-->
+    <id column="job_id" jdbcType="BIGINT" property="jobId" />
+    <result column="job_name" jdbcType="VARCHAR" property="jobName" />
+    <result column="job_code" jdbcType="VARCHAR" property="jobCode" />
+    <result column="job_group" jdbcType="VARCHAR" property="jobGroup" />
+    <result column="invoke_target" jdbcType="VARCHAR" property="invokeTarget" />
+    <result column="cron_expression" jdbcType="VARCHAR" property="cronExpression" />
+    <result column="misfire_policy" jdbcType="VARCHAR" property="misfirePolicy" />
+    <result column="concurrent" jdbcType="VARCHAR" property="concurrent" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="update_date" jdbcType="TIMESTAMP" property="updateDate" />
+    <result column="create_user_id" jdbcType="BIGINT" property="createUserId" />
+    <result column="update_user_id" jdbcType="BIGINT" property="updateUserId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    job_id, job_name, job_code, job_group, invoke_target, cron_expression, misfire_policy, 
+    concurrent, `status`, remark, create_date, update_date, create_user_id, update_user_id
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from cpc_job
+    where job_id = #{jobId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <!--@mbg.generated-->
+    delete from cpc_job
+    where job_id = #{jobId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.xiao.dao.dto.CpcJob">
+    <!--@mbg.generated-->
+    insert into cpc_job (job_id, job_name, job_code, 
+      job_group, invoke_target, cron_expression, 
+      misfire_policy, concurrent, `status`, 
+      remark, create_date, update_date, 
+      create_user_id, update_user_id)
+    values (#{jobId,jdbcType=BIGINT}, #{jobName,jdbcType=VARCHAR}, #{jobCode,jdbcType=VARCHAR}, 
+      #{jobGroup,jdbcType=VARCHAR}, #{invokeTarget,jdbcType=VARCHAR}, #{cronExpression,jdbcType=VARCHAR}, 
+      #{misfirePolicy,jdbcType=VARCHAR}, #{concurrent,jdbcType=VARCHAR}, #{status,jdbcType=VARCHAR}, 
+      #{remark,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}, #{updateDate,jdbcType=TIMESTAMP}, 
+      #{createUserId,jdbcType=BIGINT}, #{updateUserId,jdbcType=BIGINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.xiao.dao.dto.CpcJob">
+    <!--@mbg.generated-->
+    insert into cpc_job
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="jobId != null">
+        job_id,
+      </if>
+      <if test="jobName != null and jobName != ''">
+        job_name,
+      </if>
+      <if test="jobCode != null and jobCode != ''">
+        job_code,
+      </if>
+      <if test="jobGroup != null and jobGroup != ''">
+        job_group,
+      </if>
+      <if test="invokeTarget != null and invokeTarget != ''">
+        invoke_target,
+      </if>
+      <if test="cronExpression != null and cronExpression != ''">
+        cron_expression,
+      </if>
+      <if test="misfirePolicy != null and misfirePolicy != ''">
+        misfire_policy,
+      </if>
+      <if test="concurrent != null and concurrent != ''">
+        concurrent,
+      </if>
+      <if test="status != null and status != ''">
+        `status`,
+      </if>
+      <if test="remark != null and remark != ''">
+        remark,
+      </if>
+      <if test="createDate != null">
+        create_date,
+      </if>
+      <if test="updateDate != null">
+        update_date,
+      </if>
+      <if test="createUserId != null">
+        create_user_id,
+      </if>
+      <if test="updateUserId != null">
+        update_user_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="jobId != null">
+        #{jobId,jdbcType=BIGINT},
+      </if>
+      <if test="jobName != null and jobName != ''">
+        #{jobName,jdbcType=VARCHAR},
+      </if>
+      <if test="jobCode != null and jobCode != ''">
+        #{jobCode,jdbcType=VARCHAR},
+      </if>
+      <if test="jobGroup != null and jobGroup != ''">
+        #{jobGroup,jdbcType=VARCHAR},
+      </if>
+      <if test="invokeTarget != null and invokeTarget != ''">
+        #{invokeTarget,jdbcType=VARCHAR},
+      </if>
+      <if test="cronExpression != null and cronExpression != ''">
+        #{cronExpression,jdbcType=VARCHAR},
+      </if>
+      <if test="misfirePolicy != null and misfirePolicy != ''">
+        #{misfirePolicy,jdbcType=VARCHAR},
+      </if>
+      <if test="concurrent != null and concurrent != ''">
+        #{concurrent,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null and status != ''">
+        #{status,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null and remark != ''">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUserId != null">
+        #{createUserId,jdbcType=BIGINT},
+      </if>
+      <if test="updateUserId != null">
+        #{updateUserId,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xiao.dao.dto.CpcJob">
+    <!--@mbg.generated-->
+    update cpc_job
+    <set>
+      <if test="jobName != null and jobName != ''">
+        job_name = #{jobName,jdbcType=VARCHAR},
+      </if>
+      <if test="jobCode != null and jobCode != ''">
+        job_code = #{jobCode,jdbcType=VARCHAR},
+      </if>
+      <if test="jobGroup != null and jobGroup != ''">
+        job_group = #{jobGroup,jdbcType=VARCHAR},
+      </if>
+      <if test="invokeTarget != null and invokeTarget != ''">
+        invoke_target = #{invokeTarget,jdbcType=VARCHAR},
+      </if>
+      <if test="cronExpression != null and cronExpression != ''">
+        cron_expression = #{cronExpression,jdbcType=VARCHAR},
+      </if>
+      <if test="misfirePolicy != null and misfirePolicy != ''">
+        misfire_policy = #{misfirePolicy,jdbcType=VARCHAR},
+      </if>
+      <if test="concurrent != null and concurrent != ''">
+        concurrent = #{concurrent,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null and status != ''">
+        `status` = #{status,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null and remark != ''">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        create_date = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateDate != null">
+        update_date = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUserId != null">
+        create_user_id = #{createUserId,jdbcType=BIGINT},
+      </if>
+      <if test="updateUserId != null">
+        update_user_id = #{updateUserId,jdbcType=BIGINT},
+      </if>
+    </set>
+    where job_id = #{jobId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xiao.dao.dto.CpcJob">
+    <!--@mbg.generated-->
+    update cpc_job
+    set job_name = #{jobName,jdbcType=VARCHAR},
+      job_code = #{jobCode,jdbcType=VARCHAR},
+      job_group = #{jobGroup,jdbcType=VARCHAR},
+      invoke_target = #{invokeTarget,jdbcType=VARCHAR},
+      cron_expression = #{cronExpression,jdbcType=VARCHAR},
+      misfire_policy = #{misfirePolicy,jdbcType=VARCHAR},
+      concurrent = #{concurrent,jdbcType=VARCHAR},
+      `status` = #{status,jdbcType=VARCHAR},
+      remark = #{remark,jdbcType=VARCHAR},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
+      update_date = #{updateDate,jdbcType=TIMESTAMP},
+      create_user_id = #{createUserId,jdbcType=BIGINT},
+      update_user_id = #{updateUserId,jdbcType=BIGINT}
+    where job_id = #{jobId,jdbcType=BIGINT}
+  </update>
+</mapper>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiao.dao.inter.CpcGroupRelationMapper">
+  <resultMap id="BaseResultMap" type="com.xiao.dao.dto.CpcGroupRelation">
+    <!--@mbg.generated-->
+    <!--@Table cpc_group_relation-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="group_id" jdbcType="BIGINT" property="groupId" />
+    <result column="member_id" jdbcType="BIGINT" property="memberId" />
+    <result column="nickname" jdbcType="VARCHAR" property="nickname" />
+    <result column="role" jdbcType="OTHER" property="role" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="user_no" jdbcType="VARCHAR" property="userNo" />
+    <result column="unit_name" jdbcType="VARCHAR" property="unitName" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, group_id, member_id, nickname, `role`, username, user_no, unit_name
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from cpc_group_relation
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <!--@mbg.generated-->
+    delete from cpc_group_relation
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.xiao.dao.dto.CpcGroupRelation" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into cpc_group_relation (group_id, member_id, nickname, 
+      `role`, username, user_no, 
+      unit_name)
+    values (#{groupId,jdbcType=BIGINT}, #{memberId,jdbcType=BIGINT}, #{nickname,jdbcType=VARCHAR}, 
+      #{role,jdbcType=OTHER}, #{username,jdbcType=VARCHAR}, #{userNo,jdbcType=VARCHAR}, 
+      #{unitName,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.xiao.dao.dto.CpcGroupRelation" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into cpc_group_relation
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="groupId != null">
+        group_id,
+      </if>
+      <if test="memberId != null">
+        member_id,
+      </if>
+      <if test="nickname != null and nickname != ''">
+        nickname,
+      </if>
+      <if test="role != null">
+        `role`,
+      </if>
+      <if test="username != null and username != ''">
+        username,
+      </if>
+      <if test="userNo != null and userNo != ''">
+        user_no,
+      </if>
+      <if test="unitName != null and unitName != ''">
+        unit_name,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="groupId != null">
+        #{groupId,jdbcType=BIGINT},
+      </if>
+      <if test="memberId != null">
+        #{memberId,jdbcType=BIGINT},
+      </if>
+      <if test="nickname != null and nickname != ''">
+        #{nickname,jdbcType=VARCHAR},
+      </if>
+      <if test="role != null">
+        #{role,jdbcType=OTHER},
+      </if>
+      <if test="username != null and username != ''">
+        #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="userNo != null and userNo != ''">
+        #{userNo,jdbcType=VARCHAR},
+      </if>
+      <if test="unitName != null and unitName != ''">
+        #{unitName,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xiao.dao.dto.CpcGroupRelation">
+    <!--@mbg.generated-->
+    update cpc_group_relation
+    <set>
+      <if test="groupId != null">
+        group_id = #{groupId,jdbcType=BIGINT},
+      </if>
+      <if test="memberId != null">
+        member_id = #{memberId,jdbcType=BIGINT},
+      </if>
+      <if test="nickname != null and nickname != ''">
+        nickname = #{nickname,jdbcType=VARCHAR},
+      </if>
+      <if test="role != null">
+        `role` = #{role,jdbcType=OTHER},
+      </if>
+      <if test="username != null and username != ''">
+        username = #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="userNo != null and userNo != ''">
+        user_no = #{userNo,jdbcType=VARCHAR},
+      </if>
+      <if test="unitName != null and unitName != ''">
+        unit_name = #{unitName,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xiao.dao.dto.CpcGroupRelation">
+    <!--@mbg.generated-->
+    update cpc_group_relation
+    set group_id = #{groupId,jdbcType=BIGINT},
+      member_id = #{memberId,jdbcType=BIGINT},
+      nickname = #{nickname,jdbcType=VARCHAR},
+      `role` = #{role,jdbcType=OTHER},
+      username = #{username,jdbcType=VARCHAR},
+      user_no = #{userNo,jdbcType=VARCHAR},
+      unit_name = #{unitName,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
